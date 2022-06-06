@@ -4,4 +4,39 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --background: #1a1d23;
+  --highlight: #ff57b2;
+  --heading: #f8f8f8;
+  --body: #d7d7d7;
+  --info: #bbbbbb;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var(--heading);
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--highlight);
+    border-radius: 0.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
